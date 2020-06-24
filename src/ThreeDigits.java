@@ -1040,7 +1040,7 @@ public class ThreeDigits {
 
 
 
-    public void performSearch( String strategy){
+    private void performSearch(String strategy){
         switch (strategy) {
             case "B":
                 BreadFirstSearch();
