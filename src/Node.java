@@ -2,24 +2,25 @@ import java.util.ArrayList;
 
 public class Node {
 
-    Node parent;
-    Digit digit;
-    ArrayList<Node> children;
-    int heuristic;
-    int gValue;
-    int fValue;
+    private Node parent;
+    private Digit digit;
+    private ArrayList<Node> children;
+    private int heuristic;
+    private int gValue;
+    private int fValue;
 
-    public Node( String number ){
+
+    Node(String number){
         this.digit = new Digit(number);
         this.children = new ArrayList<Node>();
 
     }
 
-    public void setParent(Node node) {
+    void setParent(Node node) {
         parent = node;
     }
 
-    public Node getParent(){
+    Node getParent(){
         return this.parent;
     }
 
@@ -27,29 +28,29 @@ public class Node {
         return this.children;
     }
 
-    public Digit getDigit(){
+    Digit getDigit(){
         return this.digit;
     }
 
-    public void setHeuristic( int num ){
+    void setHeuristic(int num){
         this.heuristic = num;
     }
-    public int getHeuristic(){
+    int getHeuristic(){
         return this.heuristic;
     }
 
-    public void setgValue(int num){
+    void setgValue(int num){
         this.gValue = num;
     }
 
-    public int getgValue(){
+    int getgValue(){
         return this.gValue;
     }
 
-    public void setfValue( int num){
+    void setfValue(int num){
         this.fValue = num;
     }
-    public int getfValue(){
+    int getfValue(){
         return this.fValue;
     }
 

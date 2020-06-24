@@ -152,7 +152,7 @@ public class ThreeDigits {
     }
 
 
-    public boolean cycleCheck( Node current, Queue<Node> expanded){
+    private boolean cycleCheck(Node current, Queue<Node> expanded){
 
         /*
         Here I check for cycles.
@@ -197,7 +197,7 @@ public class ThreeDigits {
         return false;
     }
 
-    public void BreadFirstSearch(){
+    private void BreadFirstSearch(){
 
 
         Queue<Node> expanded = new LinkedList<Node>();
@@ -421,7 +421,7 @@ public class ThreeDigits {
         helperDFS( current );
     }
 
-    public boolean DepthLimitedSearch( Node current, int depthOfTree){
+    private boolean DepthLimitedSearch(Node current, int depthOfTree){
 
         if(depthOfTree >= 0){
             temporaryNodeHolder.removeAll(forbidden);
@@ -525,7 +525,7 @@ public class ThreeDigits {
 
     }
 
-    public void printTemporaryExpanded( ArrayList<String> nodes ){
+    private void printTemporaryExpanded(ArrayList<String> nodes){
 
         nodes.removeAll(forbidden);
 
@@ -541,7 +541,7 @@ public class ThreeDigits {
     }
 
 
-    public void IDS(Node current){
+    private void IDS(Node current){
 
         double infinity = Double.POSITIVE_INFINITY;
 
